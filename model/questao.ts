@@ -1,3 +1,4 @@
+import { embaralhar } from "@/functions/arraysEmbaralhados"
 import RespostaModel from "./resposta"
 
 export default class QuestaoModel {
@@ -35,6 +36,11 @@ export default class QuestaoModel {
         }
 
         return false
+    }
+
+    embaralharRespostas(): QuestaoModel {
+        let respostaEmbaralhada = embaralhar(this.#respostas)
+        return new QuestaoModel(this.#id, this.#enunciado, respostaEmbaralhada)
     }
 
     paraObjeto() {
