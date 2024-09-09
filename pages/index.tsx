@@ -9,6 +9,11 @@ export default function Home() {
     RespostaModel.errada("Azul"),
     RespostaModel.errada("Preta"),
   ])
+
+  function respostaFornecida(indice: number): void{
+    console.log(indice)
+  }
+
   return (
     <div style={{
       height: "100vh",
@@ -16,7 +21,7 @@ export default function Home() {
       justifyContent: "center",
       alignItems: "center"
     }}>
-      <Questao valor={questaoTeste}/>
+      <Questao valor={questaoTeste} respostaFornecida={respostaFornecida}/>
     </div>
   );
 }
