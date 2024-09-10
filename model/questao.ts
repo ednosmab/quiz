@@ -41,7 +41,7 @@ export default class QuestaoModel {
     responderCom(indice: number): QuestaoModel {
         const acertou = this.#respostas[indice]?.certa
         const respostas = this.#respostas.map((resposta, i) => {
-            const respostaSelecionada = indice == 1
+            const respostaSelecionada = indice === i
             const deveRevelar = respostaSelecionada || resposta.certa
             return deveRevelar ? resposta.revelar() : resposta
         })
