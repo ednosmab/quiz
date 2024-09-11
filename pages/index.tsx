@@ -29,19 +29,11 @@ export default function Home() {
   function irParaProximoPasso(){}
 
   return (
-    <div style={{
-      height: "100vh",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center"
-    }}>
       <Questionario
         questao={questao}
         ultimaQuestao={false}
         questaoRespondida={questaoRespondida}
         irParaProximoPasso={irParaProximoPasso}
       />
-    </div>
   );
 }
