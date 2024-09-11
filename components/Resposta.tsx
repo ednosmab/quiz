@@ -10,7 +10,6 @@ interface RespostaProps{
 }
 export default function Resposta(props: RespostaProps){
     const resposta = props.valor
-    console.log(resposta)
     return (
         <div 
             className={styles.resposta}
