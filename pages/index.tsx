@@ -1,5 +1,6 @@
-import Botao from "@/components/Botao";
-import Questao from "@/components/Questao";
+// import Botao from "@/components/Botao";
+// import Questao from "@/components/Questao";
+import Questionario from "@/components/Questionario";
 import QuestaoModel from "@/model/questao";
 import RespostaModel from "@/model/resposta";
 import { useState } from "react";
@@ -25,6 +26,10 @@ export default function Home() {
     } 
   }
 
+  function questaoRespondida(questao: QuestaoModel){}
+  
+  function irParaProximoPasso(){}
+
   return (
     <div style={{
       height: "100vh",
@@ -33,13 +38,20 @@ export default function Home() {
       justifyContent: "center",
       alignItems: "center"
     }}>
-      <Questao 
+      <Questionario
+        questao={questao}
+        ultimaQuestao={false}
+        questaoRespondida={questaoRespondida}
+        irParaProximoPasso={irParaProximoPasso}
+
+      />
+      {/* <Questao 
         valor={questao} 
         respostaFornecida={respostaFornecida} 
         tempoEsgotado={tempoEsgotado}
         tempoParaResposta={5}
       />
-    <Botao texto="Próxima"/>
+    <Botao texto="Próxima"/> */}
     </div>
   );
 }
