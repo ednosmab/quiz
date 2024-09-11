@@ -1,0 +1,8 @@
+.resultado {
+    height: 100vh;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
