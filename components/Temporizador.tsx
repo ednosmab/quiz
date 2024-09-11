@@ -1,9 +1,7 @@
 import { CountdownCircleTimer } from "react-countdown-circle-timer"
 import styles from "../styles/Temporizador.module.css"
-import { spawn } from "child_process"
-import { Span } from "next/dist/trace"
-
 interface TemporizadorProps{
+    key: any
     duracao: number
     tempoEsgotado: () => void
 }
