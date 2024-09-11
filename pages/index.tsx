@@ -1,3 +1,4 @@
+import Botao from "@/components/Botao";
 import Questao from "@/components/Questao";
 import QuestaoModel from "@/model/questao";
 import RespostaModel from "@/model/resposta";
@@ -28,6 +29,7 @@ export default function Home() {
     <div style={{
       height: "100vh",
       display: "flex",
+      flexDirection: "column",
       justifyContent: "center",
       alignItems: "center"
     }}>
@@ -37,6 +39,7 @@ export default function Home() {
         tempoEsgotado={tempoEsgotado}
         tempoParaResposta={5}
       />
+    <Botao texto="Próxima"/>
     </div>
   );
 }
