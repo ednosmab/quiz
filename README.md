@@ -1,3 +1,45 @@
+
+![image](https://github.com/user-attachments/assets/99c5e6b9-fed0-43ac-a865-d6ea0deda266)
+
+<h1 align="center"> Projeto Quiz</h1>
+
+O Projeto Quiz é uma aplicação interativa de perguntas e respostas desenvolvida utilizando tecnologias modernas.
+
+#
+
+## 🛠️ Tecnologias Utilizadas 🧰
+
+- TypeScript:
+  - Modelagem das perguntas e das respostas.
+  - Composição de interfaces
+- ReactJS:
+  - Composição de componentes com hooks (useState, useRouter, useEffect) e a biblioteca Countdown-circle para temporizador.
+- NextJS:
+  - Servindo páginas, roteamento e passagem de parâmetros via URL.
+- CSS:
+  - Técnicas para flip nas respostas das perguntas.
+
+#
+
+## ⚙️ Funcionalidades
+
+- Sistema de perguntas e respostas.
+- Estatísticas de acertos.
+- Simulação de banco de dados.
+- Criação e integração de API.
+
+#
+
+Este projeto foi fundamental para aprimorar habilidades em desenvolvimento web, integrando front-end e back-end de maneira eficiente.
+
+#
+
+## 🌎 Veja como ficou
+
+https://quiz-ten-omega.vercel.app/
+
+#
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
